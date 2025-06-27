@@ -1,21 +1,3 @@
-# はじめに
-GitHubセミナーをご受講いただきありがとうございます。
-
-# 本セミナーの概要
-
-gitとは
-gitの基本的な使い方と利便性
-
-GitHubとは
-GitHub Actionsとは
-GitHub Codespaceとは
-
-add
-add 2
-
-# セミナーの構成
-
-Project1では、簡単なPythonコードを用いてGitHub Actionsの動作確認を行う。
 
  # CI/CDについて
 
@@ -40,3 +22,7 @@ CD（Continuous Delivery / Continuous Deployment）＝ 継続的デリバリー 
     ステージング環境に自動デプロイされ、あとはボタン一つで本番反映
 
     正確には「CI＝統合＋テスト」、「CD＝本番までの自動化レベルの違い」
+
+
+# CDの設定方法
+
