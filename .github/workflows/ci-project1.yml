@@ -40,6 +40,6 @@ jobs:
           username: ${{ secrets.DEPLOY_USER }}
           key: ${{ secrets.DEPLOY_KEY }}
           script: |
-            cd /var/www/myapp
-            git clone https://github.com/halchil/Netsugen-GitHub.git
+            cd /var/www/myapp/Netsugen-GitHub
+            git pull origin main
             
