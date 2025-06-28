@@ -84,6 +84,7 @@ ll /var/www/myapp/
 total 8
 drwxr-xr-x 2 root root 4096 Jun 28 06:31 ./
 drwxr-xr-x 3 root root 4096 Jun 28 06:31 ../
+
 ```
 
 ll /var/www/myapp/
@@ -123,3 +124,6 @@ drwxr-xr-x 3 root   root   4096 Jun 28 06:31 ../
 失敗したワークフローを選ぶ
 
 右上の「Re-run jobs」または「Re-run all jobs」ボタンを押す
+=======
+```
+
