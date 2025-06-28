@@ -78,7 +78,10 @@ CI/CDパイプラインにCD用の`deploy`ステップを追加。
 
 []
 
+```
+[実行コマンド]
 ll /var/www/myapp/
 total 8
 drwxr-xr-x 2 root root 4096 Jun 28 06:31 ./
 drwxr-xr-x 3 root root 4096 Jun 28 06:31 ../
+```
