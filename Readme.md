@@ -16,3 +16,4 @@ add 2
 # セミナーの構成
 
 Project1では、簡単なPythonコードを用いてGitHub Actionsの動作確認を行う。
+
