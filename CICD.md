@@ -77,3 +77,8 @@ sudo mkdir /var/www/myapp
 CI/CDパイプラインにCD用の`deploy`ステップを追加。
 
 []
+
+ll /var/www/myapp/
+total 8
+drwxr-xr-x 2 root root 4096 Jun 28 06:31 ./
+drwxr-xr-x 3 root root 4096 Jun 28 06:31 ../
