@@ -85,3 +85,41 @@ total 8
 drwxr-xr-x 2 root root 4096 Jun 28 06:31 ./
 drwxr-xr-x 3 root root 4096 Jun 28 06:31 ../
 ```
+
+ll /var/www/myapp/
+total 12
+drwxr-xr-x 3 ubuntu ubuntu 4096 Jun 28 07:06 ./
+drwxr-xr-x 3 root   root   4096 Jun 28 06:31 ../
+drwxrwxr-x 6 ubuntu ubuntu 4096 Jun 28 07:06 Netsugen-GitHub/
+
+# トラブルシュート
+
+`git clone`の権限が足りなかった。
+```
+[実行コマンド]
+sudo chown -R ubuntu:ubuntu /var/www/myapp
+
+ll /var/www/myapp/
+total 8
+drwxr-xr-x 2 ubuntu ubuntu 4096 Jun 28 06:31 ./
+drwxr-xr-x 3 root   root   4096 Jun 28 06:31 ../
+```
+
+    プルリクを出した
+
+    CD（デプロイ）ステップで失敗した
+
+    CI/CD の GitHub Actions が "failed" 状態になっている
+
+    修正せずに同じプルリクのまま、もう一回パイプラインを流したい
+
+✅ 結論：プルリクをやり直さず、同じプルリクで再実行できる！
+再実行する方法は2つ：
+
+該当のプルリクを開く
+
+下の「Checks」タブ（または「Actions」タブ）をクリック
+
+失敗したワークフローを選ぶ
+
+右上の「Re-run jobs」または「Re-run all jobs」ボタンを押す

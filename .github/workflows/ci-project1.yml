@@ -41,5 +41,5 @@ jobs:
           key: ${{ secrets.DEPLOY_KEY }}
           script: |
             cd /var/www/myapp
-            git clone https://github.com/halchil/Netsugen-GitHub.git
+            git pull origin main
             
