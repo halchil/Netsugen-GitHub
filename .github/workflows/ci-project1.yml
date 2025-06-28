@@ -28,3 +28,18 @@ jobs:
       - name: Run tests
         run: |
           pytest
+
+  deploy:
+    needs: test  # ← ここで「testジョブが成功したら実行」と指定
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.DEPLOY_HOST }}
+          username: ${{ secrets.DEPLOY_USER }}
+          key: ${{ secrets.DEPLOY_KEY }}
+          script: |
+            cd /var/www/myapp
+            git clone https://github.com/halchil/Netsugen-GitHub.git
+            
