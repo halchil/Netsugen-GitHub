@@ -9,3 +9,6 @@ RUN apt-get update && apt-get install -y \
 
 # 作業ディレクトリ
 WORKDIR /workspace
+
+# デフォルトで bash を起動してコンテナが即終了しないようにする
+CMD ["bash"]
