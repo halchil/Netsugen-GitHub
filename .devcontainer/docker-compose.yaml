@@ -6,14 +6,3 @@ services:
       dockerfile: Dockerfile
     volumes:
       - ..:/workspace:cached
-    depends_on:
-      - db
-
-  db:
-    image: postgres:15
-    environment:
-      POSTGRES_USER: devuser
-      POSTGRES_PASSWORD: devpass
-      POSTGRES_DB: devdb
-    ports:
-      - "5432:5432"
