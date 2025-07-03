@@ -1,6 +1,6 @@
 {
   "name": "Python + PostgreSQL Dev Container",
-  "dockerComposeFile": "docker-compose.yml",
+  "dockerComposeFile": "docker-compose.yaml",
   "service": "python",  // VS Codeがattachする対象
   "workspaceFolder": "/workspace",
   "settings": {
