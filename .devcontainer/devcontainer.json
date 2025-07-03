@@ -1,0 +1,13 @@
+{
+  "name": "Python + PostgreSQL Dev Container",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "python",  // VS Codeがattachする対象
+  "workspaceFolder": "/workspace",
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "extensions": [
+    "ms-python.python"
+  ],
+  "postCreateCommand": "pip install numpy"
+}
