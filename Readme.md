@@ -6,8 +6,8 @@
 
 - `project1/` : PythonによるGitHub Actionsの動作確認用サンプル（main.py, test_main.py, requirements.txt, test_main.py）
 - `GitHub Copilot/` : GitHub Copilotの解説資料とサンプルコード（test.js, test.py, Readme.md, img/）
-- `CICD.md` : CI/CDに関する解説ドキュメント
-- `Codespace.md` : GitHub Codespaceに関する解説ドキュメント
+- `CICD` : CI/CDに関する解説ドキュメント
+- `Codespace` : GitHub Codespaceに関する解説ドキュメント
 
 ## Project1の内容と実行方法
 
