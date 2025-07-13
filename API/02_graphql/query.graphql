@@ -1,0 +1,14 @@
+{
+  repository(owner: "halchil", name: "Netsugen-GitHub") {
+    name
+    stargazerCount
+    forks {
+      totalCount
+    }
+    issues(last: 3) {
+      nodes {
+        title
+      }
+    }
+  }
+}
