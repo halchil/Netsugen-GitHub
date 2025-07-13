@@ -7,8 +7,8 @@ RUN apt-get update && apt-get install -y \
     git \
     && rm -rf /var/lib/apt/lists/*
 
-# 作業ディレクトリ
-WORKDIR /workspace
+# 作業ディレクトリ（Codespaceのルートと合わせる）
+WORKDIR /workspaces/Netsugen-GitHub
 
-# デフォルトで bash を起動してコンテナが即終了しないようにする
+# デフォルトで bash を起動
 CMD ["bash"]

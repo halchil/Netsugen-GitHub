@@ -5,4 +5,4 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - ..:/workspace:cached
+      - ..:/workspace/Netsugen-GitHub:cached
