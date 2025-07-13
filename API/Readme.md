@@ -20,3 +20,4 @@ POST /repos/halchil/Hello-World/issues
 → 「このリポジトリに新しいIssue作って」
 
 という“HTTPリクエスト”を送ることで、情報を取得したり、書き込んだりできるということ。
+
